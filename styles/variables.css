@@ -1,1 +1,48 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --main-font: 'Inter-Variable';
+  --accent-font: 'PressStart2P-Regular';
+
+  --main-font-weight-text: 400;
+  --main-font-weight-title: 700;
+
+  --background-color: #fff;
+  --accent-color: #000;
+  --button-text-color-mix: #fff;
+  --heart-contour-color: #000;
+  --heart-main-body-color: transparent;
+  --heart-core-color: transparent;
+  --heart-sparks-color: #f00;
+  --heart-active-color: #f00;
+
+  --content-inline-size: min(100%, 700px);
+  --dialog-inline-size: min(calc(100vw - 42px), 357px);
+
+  --page-background:
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(
+      to bottom,
+      #e7e7e7 0.01%,
+      #1a1a1a 100%
+    );
+}
+
+@media (width <= 375px) {
+  :root {
+    --dialog-inline-size: min(calc(100vw - 34px), 341px);
+  }
+}

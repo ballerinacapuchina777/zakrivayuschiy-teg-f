@@ -8,8 +8,18 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-inline-size: 100%;
 }
 
 h1,
@@ -31,10 +41,14 @@ a {
 }
 
 button,
-input {
+input,
+textarea {
   color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
+  font: inherit;
+}
+
+button {
+  border: none;
 }
 
 ul,
