@@ -1,1 +1,1 @@
-https://ballerinacapuchina777.github.io/zakrivayuschiy-teg-f/
+https://github.com/ballerinacapuchina777/zakrivayuschiy-teg-f
