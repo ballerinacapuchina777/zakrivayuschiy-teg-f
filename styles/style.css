@@ -11,6 +11,7 @@
 }
 
 .header {
+  font-family: var(--accent-font), fantasy;
   inline-size: var(--content-inline-size);
   margin: 0 auto;
   border: 2px solid var(--accent-color);
@@ -67,6 +68,7 @@
 }
 
 .card__label {
+  font-family: var(--accent-font), fantasy;
   position: absolute;
   z-index: 1;
   inset-block-start: 25px;
@@ -176,6 +178,7 @@
 }
 
 .button {
+  font-family: var(--accent-font), fantasy;
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -189,6 +192,7 @@
   line-height: 0.9;
   background-color: var(--background-color);
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -212,12 +216,21 @@
   box-shadow: 2px 2px 0 var(--accent-color);
 }
 
-.button__text,
+.button__text {
+  position: relative;
+  z-index: 1;
+  color: var(--button-text-color-mix);
+  mix-blend-mode: difference;
+}
+
 .save-button__icon {
   position: relative;
   z-index: 1;
   color: var(--button-text-color-mix);
   mix-blend-mode: difference;
+  inline-size: 21px;
+  block-size: 21px;
+  flex-shrink: 0;
 }
 
 .card__like-button {
@@ -229,12 +242,6 @@
   display: flex;
   margin: 50px auto 0;
   padding: 15px 20px;
-}
-
-.save-button__icon {
-  inline-size: 21px;
-  block-size: 21px;
-  flex-shrink: 0;
 }
 
 .dialog {
@@ -267,6 +274,7 @@
 }
 
 .dialog__text {
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
@@ -316,6 +324,7 @@
   }
 
   .dialog {
+    max-width: 341px;
     padding-inline: 40px;
   }
 }

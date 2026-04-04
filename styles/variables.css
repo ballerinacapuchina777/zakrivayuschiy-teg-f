@@ -2,10 +2,10 @@
 
 :root {
   --main-font: 'Inter-Variable';
-  --accent-font: 'PressStart2P-Regular';
+  --accent-font: 'PressStart2P';
 
-  --main-font-weight-text: 400;
-  --main-font-weight-title: 700;
+  --main-font-weight-text: 410;
+  --main-font-weight-title: 715;
 
   --background-color: #fff;
   --accent-color: #000;

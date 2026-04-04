@@ -85,7 +85,7 @@
 
 .like-icon.is-liked .contour {
   fill: var(--heart-active-color);
-  transition-delay: 0s;
+  transition-delay: 0.06s;
 }
 
 .like-icon.is-liked .core {

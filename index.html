@@ -9,8 +9,16 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
   </head>
   <body class="page">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="floppy-icon" viewBox="0 0 21 21">
+        <path fill="currentColor" d="M0 0h16l5 5v16H0V0Zm3 3v4h8V3H3Zm11 0v5h4V7l-4-4Zm-11 9v6h15v-6H3Z"/>
+      </symbol>
+    </svg>
     <header class="header">
       <a class="header__logo" href="#0">&lt;/HTML&gt;</a>
       <h1 class="header__title">закрывающий тег</h1>
@@ -515,16 +523,11 @@
       <button class="button save-button" type="button" aria-controls="save-dialog">
         <svg
           class="save-button__icon"
-          viewBox="0 0 21 21"
           width="21"
           height="21"
-          xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
         >
-          <path
-            fill="currentColor"
-            d="M0 0h16l5 5v16H0V0Zm3 3v4h8V3H3Zm11 0v5h4V7l-4-4Zm-11 9v6h15v-6H3Z"
-          />
+          <use href="#floppy-icon"/>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
@@ -534,16 +537,11 @@
       <div class="dialog__content">
         <svg
           class="dialog__icon"
-          viewBox="0 0 21 21"
           width="39"
           height="39"
-          xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
         >
-          <path
-            fill="currentColor"
-            d="M0 0h16l5 5v16H0V0Zm3 3v4h8V3H3Zm11 0v5h4V7l-4-4Zm-11 9v6h15v-6H3Z"
-          />
+          <use href="#floppy-icon"/>
         </svg>
 
         <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
